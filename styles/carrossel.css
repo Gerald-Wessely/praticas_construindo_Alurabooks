@@ -61,3 +61,17 @@
     font-weight: 700;
     text-decoration: none;
 }
+.descrição__titulo-livros{
+    color: var(--azul);
+    font-size: 14px;
+    font-weight: 700;
+    margin: 0.5em 0;
+}
+.descrição__titulo_ {
+    color: var(--laranja);
+    font-weight: 700;
+    font-size: 16px;
+}
+.descrição__texto-2{
+    font-size: 15px;
+}
