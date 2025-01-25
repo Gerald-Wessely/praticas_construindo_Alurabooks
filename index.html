@@ -22,7 +22,7 @@
     <header class="cabeçalho">
         <div class="container">
             <input type="checkbox" id="menu" class="container__botao">
-            <label for="menu">
+            <label for="menu" class="container__rotulo">
                 <span class="cabeçalho__menu-hamburguer container__imagem"></span>
             </label>
             <ul class="lista-menu">
@@ -48,7 +48,7 @@
         </div>
         <ul class="opções">
             <input type="checkbox" id="opções-menu" class="opções__botão">
-            <label for="opções-menu">
+            <label for="opções-menu" class="opções__rotulo">
                 <li class="opções__item">CATEGORIAS</li>
             </label>
             <ul class="lista-menu">
@@ -74,8 +74,14 @@
         </ul>
         <div class="container">
             <a href="#"><img src="img/Favoritos.svg" alt="Meus Favoritos" class="container__imagem container__imagem-transparente"></a>
-            <a href="#"><img src="img/Sacola.svg" alt="Sacola de compras" class="container__imagem"></a>
-            <a href="#"><img src="img/Usuario.svg" alt="Meu perfil" class="container__imagem"></a>
+            <a href="#" class="container__link">
+                <img src="img/Sacola.svg" alt="Sacola de compras" class="container__imagem">
+            </a>
+            <p class="conteiner_texto">Minha sacola</p>
+            <a href="#" class="container__link">
+                <img src="img/Usuario.svg" alt="Meu perfil" class="container__imagem">
+                <p class="conteiner_texto">Meu perfil</p>
+            </a>
         </div>
     </header>
     <section class="banner">
@@ -87,6 +93,7 @@
     <section class="carrossel">
         <h2 class="carrossel__titulo">ÚLTIMOS LANÇAMENTOS</h2>
         <!-- Slider main container -->
+         <div class="carrossel__conteiner">
         <div class="swiper">
             <!-- Additional required wrapper -->
             <!-- If we need pagination -->
@@ -126,7 +133,7 @@
                 </ul>
                 <a href="#" class="botões__ancora">Saiba mais</a>
             </div>
-
+        </div>
         </div>
     </section>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
@@ -143,6 +150,7 @@
     <section class="carrossel">
         <h2 class="carrossel__titulo">MAIS VENDIDOS</h2>
         <!-- Slider main container -->
+         <div class="carrossel__conteiner">
         <div class="swiper">
             <!-- Additional required wrapper -->
             <!-- If we need pagination -->
@@ -184,6 +192,7 @@
                 </ul>
                 <a href="#" class="botões__ancora">Saiba mais</a>
             </div>
+        </div>
             <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
             <script>
                 const deslizar = new Swiper('.swiper', {
@@ -196,9 +205,6 @@
                 });
 
             </script>
-
-    </section>
-    <section>
 
     </section>
     <section class="topicos">
